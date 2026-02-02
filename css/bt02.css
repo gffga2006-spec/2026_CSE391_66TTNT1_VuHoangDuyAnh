@@ -1,0 +1,119 @@
+/* style.css */
+
+/* 1. Cài đặt chung cho toàn bộ trang */
+* {
+    box-sizing: border-box; /* Giúp tính toán kích thước chuẩn xác hơn */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5; /* Nền xám nhạt cho dịu mắt */
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa nội dung chính */
+}
+
+/* 2. Tiêu đề chính */
+.main-title {
+    color: #a32024; /* Màu đỏ đặc trưng */
+    border-left: 5px solid #a32024;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* 3. Hệ thống lưới (Grid) chia 3 cột */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia 3 cột đều nhau */
+    gap: 25px; /* Khoảng cách giữa các thẻ */
+}
+
+/* 4. Định dạng thẻ khóa học (Card) */
+.course-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden; /* Cắt phần ảnh thừa ở góc bo */
+    transition: 0.3s; /* Hiệu ứng mượt khi di chuột vào */
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+/* 5. Phần hình ảnh */
+.banner {
+    width: 100%;
+    height: 180px;
+    background-color: #ddd;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giúp ảnh không bị méo */
+}
+
+/* 6. Phần nội dung chữ */
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    height: 50px; /* Giữ tiêu đề thẳng hàng */
+}
+
+.content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    min-height: 60px; /* Giúp các card có độ cao bằng nhau */
+}
+
+/* 7. Phần thông tin chi tiết (Class info bạn vừa đổi tên) */
+.info {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.item {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Thêm dấu gạch đầu dòng nhỏ để thay thế cho icon đã xóa */
+.item::before {
+    content: "•";
+    color: #a32024;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* 8. Hỗ trợ hiển thị trên điện thoại (Responsive) */
+@media (max-width: 992px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr); /* Còn 2 cột trên máy tính bảng */
+    }
+}
+
+@media (max-width: 600px) {
+    .course-grid {
+        grid-template-columns: 1fr; /* Còn 1 cột trên điện thoại */
+    }
+}
