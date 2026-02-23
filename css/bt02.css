@@ -26,7 +26,7 @@ body {
     padding-left: 15px;
     margin-bottom: 30px;
     font-size: 24px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 /* 3. Hệ thống lưới (Grid) chia 3 cột */
