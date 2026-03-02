@@ -1,0 +1,152 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #410336;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 10;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", cursive;
+  font-size: 28px;
+  color: #f9c74f;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f9c74f;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+
+#hero {
+  height: 800px;
+  background-image: url("./ocean.jpg");
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 80px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+#hero-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#hero-content p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+#hero-content a {
+  text-decoration: none;
+  background-color: #f9c74f;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#hero-content a:hover {
+  background-color: #ffd166;
+}
+
+
+#highlights {
+  background-color: #cce5e5;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+#highlights h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#destinations {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.destination {
+  width: 250px;
+  margin: 0 20px;
+}
+
+.destination img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destination p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.destination strong {
+  color: #007f7f;
+}
+
+footer {
+  background-color: #111;
+  padding: 30px 0;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 25px;  /* thay gap */
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+}

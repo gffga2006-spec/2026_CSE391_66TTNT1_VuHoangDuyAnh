@@ -1,0 +1,84 @@
+body {
+    background-color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+.khung-chinh {
+    width: 900px;
+    margin: auto;
+    background-color: #efefef;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+.tieu-de {
+    font-size: 20px;
+    color: #333;
+}
+
+.nhap-thong-tin {
+    display: flex;
+    flex-direction: column;
+}
+
+.hang {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.nua:first-child {
+    margin-right: 20px;
+}
+
+.nua {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.full {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    margin-bottom: 18px;
+}
+
+.area {
+    width: 100%;
+    height: 220px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.hang4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+
+.nut-gui {
+    background-color: #63b3e6;
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nut-gui:hover {
+    background-color: #4aa3df;
+}
+
+.ghi-chu {
+    font-size: 14px;
+    color: #666;
+}

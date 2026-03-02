@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.section {
+    width: 80%;
+    margin: 80px auto;
+    padding: 60px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+}
+
+.content > * {
+    margin-right: 50px;
+}
+
+.content > *:last-child {
+    margin-right: 0;
+}
+
+.card {
+    flex: 1;
+    background: #f9fafb;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.author span {
+    font-size: 13px;
+    color: #3498db;
+}
+
+.text {
+    flex: 2;
+}
+
+.text p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.bold {
+    font-weight: 600;
+    color: #222;
+}
