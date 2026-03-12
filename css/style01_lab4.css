@@ -1,0 +1,48 @@
+body{
+font-family: Arial;
+padding:30px;
+}
+
+input{
+padding:6px;
+margin-right:10px;
+}
+
+button{
+padding:6px 12px;
+margin-top:10px;
+}
+
+table{
+border-collapse: collapse;
+width:600px;
+margin-top:20px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+.low{
+background:yellow;
+}
+
+#stats{
+margin-top:15px;
+font-weight:bold;
+}
+
+.low{
+background:yellow;
+}
+
+#search{
+margin-top:15px;
+padding:6px;
+}
+
+select{
+padding:6px;
+}
